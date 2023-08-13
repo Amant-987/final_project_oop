@@ -57,12 +57,13 @@ public class NoteModelImpl implements NoteModel {
 
     @Override
     public void sortNotesByOldestToNewest() {
-//        notes.sort(Comparator.comparing(this::parseDate));
+        notes.sort((a, b) -> a.getDatetime().compareTo(b.getDatetime()));
     }
 
     @Override
     public void sortNotesByNewestToOldest() {
 //        notes.sort(Comparator.comparing(this::parseDate).reversed());
+        notes.sort((b, a) -> a.getDatetime().compareTo(b.getDatetime()));
     }
 
     @Override

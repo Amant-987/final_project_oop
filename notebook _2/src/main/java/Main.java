@@ -45,23 +45,23 @@ public class Main {
                 case 2:
                     presenter.displayAllNotes();
                     break;
-//                case 3:
-//                    System.out.println("----- SORT OPTIONS -----");
-//                    System.out.println("1. Sort by Oldest to Newest");
-//                    System.out.println("2. Sort by Newest to Oldest");
-//                    System.out.print("Enter your choice: ");
-//                    int sortChoice = scanner.nextInt();
-//                    scanner.nextLine(); // начало новой линии
-//                    if (sortChoice == 1) {
-//                        presenter.sortNotesByOldestToNewest();
-//                    } else if (sortChoice == 2)
-//                    {
-//                        presenter.sortNotesByNewestToOldest();
-//                    } else {
-//                        System.out.println("Invalid choice.");
-//                    }
-//                    presenter.displayAllNotes();
-//                    break;
+                case 3:
+                    System.out.println("----- SORT OPTIONS -----");
+                    System.out.println("1. Sort by Oldest to Newest");
+                    System.out.println("2. Sort by Newest to Oldest");
+                    System.out.print("Enter your choice: ");
+                    int sortChoice = scanner.nextInt();
+                    scanner.nextLine(); // начало новой линии
+                    if (sortChoice == 1) {
+                        presenter.sortNotesByOldestToNewest();
+                    } else if (sortChoice == 2)
+                    {
+                        presenter.sortNotesByNewestToOldest();
+                    } else {
+                        System.out.println("Invalid choice.");
+                    }
+                    presenter.displayAllNotes();
+                    break;
                 case 4:
                     System.out.println("----- FILTER OPTIONS -----");
                     System.out.println("1. Filter by Day");
